@@ -19,11 +19,13 @@ Registra automáticamente `ExceptionMapper`s que convierten tus `AppException` e
 
 ## Configuración adicional en application.properties
 # Indexar la librería para que Quarkus descubra los providers
+```properties
 quarkus.index-dependency.roony-error-quarkus.group-id=io.github.roony
 quarkus.index-dependency.roony-error-quarkus.artifact-id=roony-error-quarkus
 
 # Opcional: omitir campos null en el JSON de error
 quarkus.jackson.serialization-inclusion=NON_NULL
+```
 
 ## Uso
 # Lanza tus excepciones normalmente en la capa de servicio:
