@@ -1,0 +1,28 @@
+package io.github.roony.error.quarkus;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import io.github.roony.error.core.ErrorResponse;
+import io.github.roony.error.core.exceptions.AppException;
+
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.ext.ExceptionMapper;
+import jakarta.ws.rs.ext.Provider;
+
+@Provider
+public class AppExceptionMapper extends ExceptionMapperSupport implements ExceptionMapper<AppException> 
+{
+    private static final Logger log = LoggerFactory.getLogger(AppExceptionMapper.class);
+    
+    @Override
+    public Response toResponse(AppException exception) 
+    {
+        log.warn("AppException: {} - {}", exception.getCode(), exception.getDisplayMessage());
+
+        ErrorResponse body = buildErrorResponse(exception);
+        int status = HttpStatusRegistry.getStatus(exception.getCategory());
+
+        return Response.status(status).entity(body).build();
+    }
+}
