@@ -3,8 +3,8 @@ package io.github.roony11_1.error.quarkus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.roony.error.core.ErrorResponse;
-import io.github.roony.error.core.exceptions.AppException;
+import io.github.roony11_1.error.core.ErrorResponse;
+import io.github.roony11_1.error.core.exceptions.AppException;
 
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
