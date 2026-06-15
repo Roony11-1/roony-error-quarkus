@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import io.github.roony11_1.error.core.ErrorResponse;
 import io.github.roony11_1.error.core.exceptions.AppException;
-
+import io.github.roony11_1.error.rest.HttpStatusRegistry;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
 import jakarta.ws.rs.ext.Provider;
