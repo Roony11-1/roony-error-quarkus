@@ -1,4 +1,4 @@
-package io.github.roony.error.quarkus;
+package io.github.roony11_1.error.quarkus;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package io.github.roony.error.quarkus;
+package io.github.roony11_1.error.quarkus;
 
 import io.github.roony.error.core.ErrorCategory;
 
