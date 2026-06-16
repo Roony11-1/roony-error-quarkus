@@ -13,7 +13,7 @@ Registra automáticamente `ExceptionMapper`s que convierten tus `AppException` e
 <dependency>
     <groupId>io.github.roony</groupId>
     <artifactId>roony-error-quarkus</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
