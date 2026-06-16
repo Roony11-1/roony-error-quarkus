@@ -17,6 +17,30 @@ Registra automáticamente `ExceptionMapper`s que convierten tus `AppException` e
 </dependency>
 ```
 
+O, si usas el BOM del ecosistema:
+
+```xml
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.github.roony11-1</groupId>
+            <artifactId>roony-bom</artifactId>
+            <version>1.0.0</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<dependencies>
+    <dependency>
+        <groupId>io.github.roony11-1</groupId>
+        <artifactId>roony-error-quarkus</artifactId>
+        <!-- sin versión: la hereda del BOM -->
+    </dependency>
+</dependencies>
+```
+
 ## Configuración adicional en application.properties
 # Indexar la librería para que Quarkus descubra los providers
 ```properties
