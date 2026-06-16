@@ -7,13 +7,13 @@
 Integración de `roony-error-core` para Quarkus / Jakarta REST.  
 Registra automáticamente `ExceptionMapper`s que convierten tus `AppException` en respuestas JSON estructuradas, incluyendo `traceId` y `path`.
 
-## 🚀 Instalación
+## Instalación
 
 ```xml
 <dependency>
     <groupId>io.github.roony</groupId>
     <artifactId>roony-error-quarkus</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
